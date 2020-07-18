@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.android.marvel.ui.movies.MoviesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Layout loading-->
+        <include layout="@layout/layout_loading" />
+
+        <!-- Layout server error-->
+        <include layout="@layout/layout_server_error" />
+
+        <!-- Layout no movies available-->
+        <include layout="@layout/layout_no_movies" />
+
+        <!-- Layout container movies -->
+        <LinearLayout
+            android:id="@+id/layout_container_movies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlack"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="3" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="@string/marvel"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_default_great_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-14dp"
+                        android:text="@string/entertainment"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/text_default_size" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/image_button_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/filter"
+                    android:padding="@dimen/padding_default"
+                    android:src="@drawable/ic_filter_white" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_search_movies"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_default_height"
+                android:layout_marginStart="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_default"
+                android:layout_marginEnd="@dimen/margin_default"
+                android:layout_marginBottom="@dimen/margin_min_default"
+                android:backgroundTint="@color/colorWhite"
+                android:drawableEnd="@drawable/ic_search__white"
+                android:hint="@string/search"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/colorGray"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/edit_text_default_text_size" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_default"
+                android:layout_marginEnd="@dimen/margin_default"
+                android:layout_marginBottom="@dimen/margin_min_default"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_caption_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/genre_"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/text_default_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_caption_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_min_default"
+                    android:text="@string/all"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_default_size" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_movies"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/padding_min_default"
+                android:paddingEnd="@dimen/padding_min_default"
+                tools:listitem="@layout/item_movie" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
