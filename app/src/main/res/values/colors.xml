@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryDark">#FF0000</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#171717</color>
+    <color name="colorYellow">#FFFF33</color>
+    <color name="colorGray">#D8D8D8</color>
+
+    <!-- SwipeRefreshLayout colors -->
+    <color name="refresh_progress_01">@color/colorPrimary</color>
+    <color name="refresh_progress_02">@color/colorBlack</color>
+    <color name="refresh_progress_03">@color/colorYellow</color>
+
+</resources>

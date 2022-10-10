@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="onItemMovieClickListener"
+            type="br.com.android.marvel.ui.pages.movies.adapter.MoviesAdapter.OnItemMovieClickListener" />
+
+        <variable
+            name="movie"
+            type="br.com.gms.domain.entity.MovieEntity" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/movie_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_min_default"
+        android:background="@drawable/background_black_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{() -> onItemMovieClickListener.onClick(movie)}"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_min_default">
+
+        <ImageView
+            android:id="@+id/image_view_poster"
+            android:layout_width="@dimen/poster_small_width"
+            android:layout_height="@dimen/poster_small_heigth"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            app:loadImageByUrl="@{movie.poster}"
+            android:src="@drawable/image_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_min_default"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@{movie.title}"
+                android:textSize="@dimen/text_default_subtitle_size"
+                android:textStyle="bold"
+                tools:text="Movie title" />
+
+            <TextView
+                android:id="@+id/text_view_description"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="@{movie.plot}"
+                tools:text="@string/lorem_ipsum" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/genre"
+                    android:textSize="@dimen/text_default_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_min_default"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@{movie.genre}"
+                    tools:text="Action, Adventure, Sci-Fi" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/release"
+                    android:textSize="@dimen/text_default_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_release"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_min_default"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="@{movie.released}"
+                    tools:text="8 Jun 2020" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

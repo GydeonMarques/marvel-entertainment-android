@@ -1,0 +1,115 @@
+import app.dependencies.Libs
+import app.dependencies.Compile
+import app.dependencies.Versions
+
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs'
+}
+
+android {
+    compileSdkVersion Versions.compileSdkVersion
+
+    defaultConfig {
+        applicationId "br.com.android.marvel.entertainment"
+        minSdkVersion Versions.minSdkVersion
+        targetSdkVersion Versions.targetSdkVersion
+
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility Compile.INSTANCE.javaVersion
+        targetCompatibility Compile.INSTANCE.javaVersion
+    }
+}
+
+dependencies {
+
+    //Modules
+    implementation project(Libs.Modules.data)
+    implementation project(Libs.Modules.domain)
+    implementation project(Libs.Modules.storage)
+
+    //Log
+    implementation Libs.Log.timber
+
+    //Kotlin
+    implementation Libs.Kotlin.kotlin
+
+    //AndroidX
+    implementation Libs.AndroidX.core
+    implementation Libs.AndroidX.material
+    implementation Libs.AndroidX.appCompat
+    implementation Libs.AndroidX.swipeRefreshLayout
+
+    //RXNetwork
+    implementation Libs.RXNetwork.rxNetwork
+
+    //Lifecycle
+    implementation Libs.AndroidX.Lifecycle.livedata
+    implementation Libs.AndroidX.Lifecycle.viewModel
+
+    //Navigation
+    implementation Libs.AndroidX.Navigation.ktx
+    implementation Libs.AndroidX.Navigation.fragment
+
+    //Room
+    kapt Libs.Room.compile
+    implementation Libs.Room.ktx
+    implementation Libs.Room.room
+    implementation Libs.Room.rxjava
+
+    //Dagger
+    kapt Libs.Dagger.compiler
+    implementation Libs.Dagger.dagger
+
+    //Coroutines
+    implementation Libs.Coroutines.core
+    implementation Libs.Coroutines.android
+
+    //OKHTTP3
+    implementation Libs.OKHTTP3.bom
+    implementation Libs.OKHTTP3.logging
+    implementation Libs.OKHTTP3.okhttp3
+
+    //Retrofit
+    implementation Libs.Retrofit.retrofit
+    implementation Libs.Retrofit.jacksonConverter
+
+    //Lottie
+    implementation Libs.Lottie.lottie
+
+    //Glide
+    kapt Libs.Glide.compile
+    implementation Libs.Glide.glide
+
+    //Test
+    testImplementation Libs.Test.junit
+    androidTestImplementation Libs.Test.ext
+    androidTestImplementation Libs.Test.espresso
+
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Toobar default height -->
+    <dimen name="toolbar_default_height">55dp</dimen>
+
+    <!-- Margin default -->
+    <dimen name="margin_min_default">8dp</dimen>
+    <dimen name="margin_max_default">24dp</dimen>
+    <dimen name="margin_default">16dp</dimen>
+
+    <!-- Padding default -->
+    <dimen name="padding_min_default">8dp</dimen>
+    <dimen name="padding_max_default">24dp</dimen>
+    <dimen name="padding_default">16dp</dimen>
+
+    <!-- CardView -->
+    <dimen name="radius_default">6dp</dimen>
+    <dimen name="elevation_default">6dp</dimen>
+
+    <!-- TextView  -->
+    <dimen name="text_default_size">16sp</dimen>
+    <dimen name="text_default_small_size">12sp</dimen>
+    <dimen name="text_default_title_size">24sp</dimen>
+    <dimen name="text_default_great_size">52sp</dimen>
+    <dimen name="text_default_subtitle_size">18sp</dimen>
+
+    <!-- EditText -->
+    <dimen name="edit_text_default_height">48dp</dimen>
+    <dimen name="edit_text_default_padding">10dp</dimen>
+    <dimen name="edit_text_default_text_size">16sp</dimen>
+
+    <!-- Icon default width/height -->
+    <dimen name="icon_default_min_width">20dp</dimen>
+    <dimen name="icon_default_min_height">20dp</dimen>
+
+    <dimen name="icon_default_width">24dp</dimen>
+    <dimen name="icon_default_height">24dp</dimen>
+
+    <dimen name="icon_default_midle_width">28dp</dimen>
+    <dimen name="icon_default_midle_height">28dp</dimen>
+
+    <dimen name="icon_default_great_width">38dp</dimen>
+    <dimen name="icon_default_great_height">38dp</dimen>
+
+    <dimen name="icon_default_extra_great_width">94dp</dimen>
+    <dimen name="icon_default_extra_great_height">94dp</dimen>
+
+
+    <!-- Strok -->
+    <dimen name="border_default_height">1.2dp</dimen>
+
+    <!-- Poster  width/height -->
+    <dimen name="poster_small_width">110dp</dimen>
+    <dimen name="poster_small_heigth">150dp</dimen>
+
+    <dimen name="poster_great_width">250dp</dimen>
+    <dimen name="poster_great_heigth">400dp</dimen>
+
+
+</resources>

@@ -1,0 +1,49 @@
+import app.dependencies.Compile
+import app.dependencies.Libs
+import app.dependencies.Versions
+
+plugins {
+    id 'org.jetbrains.kotlin.android'
+    id 'com.android.library'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion Versions.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion Versions.minSdkVersion
+        targetSdkVersion Versions.targetSdkVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility Compile.INSTANCE.javaVersion
+        targetCompatibility Compile.INSTANCE.javaVersion
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    //Room
+    kapt Libs.Room.compile
+    implementation Libs.Room.ktx
+
+    //Dagger
+    kapt Libs.Dagger.compiler
+    implementation Libs.Dagger.dagger
+
+    //Lifecycle
+    implementation Libs.AndroidX.Lifecycle.livedata
+
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="state"
+            type="br.com.android.marvel.ui.pages.movies.main.MoviesState" />
+    </data>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="br.com.android.marvel.ui.pages.main.MainActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Layout loading-->
+            <include
+                android:id="@+id/layout_loading"
+                layout="@layout/layout_loading"
+                tools:visibility="gone" />
+
+            <!-- Layout error-->
+            <include
+                android:id="@+id/layout_error"
+                layout="@layout/layout_error"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <!-- Layout no movies available-->
+            <include
+                android:id="@+id/layout_no_movies"
+                layout="@layout/layout_no_movies"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <!-- Layout container movies -->
+            <include
+                android:id="@+id/layout_movies"
+                layout="@layout/layout_movies"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>

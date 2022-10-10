@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Toobar default height -->
+    <dimen name="toolbar_default_height">84dp</dimen>
+
+    <!-- Margin default -->
+    <dimen name="margin_min_default">16dp</dimen>
+    <dimen name="margin_max_default">64dp</dimen>
+    <dimen name="margin_default">32dp</dimen>
+
+    <!-- Padding default -->
+    <dimen name="padding_min_default">16dp</dimen>
+    <dimen name="padding_max_default">64dp</dimen>
+    <dimen name="padding_default">32dp</dimen>
+
+    <!-- TextView  -->
+    <dimen name="text_default_size">24sp</dimen>
+    <dimen name="text_default_small_size">24sp</dimen>
+    <dimen name="text_default_title_size">32sp</dimen>
+    <dimen name="text_default_subtitle_size">28sp</dimen>
+
+    <!-- EditText -->
+    <dimen name="edit_text_default_height">78dp</dimen>
+    <dimen name="edit_text_default_padding">24dp</dimen>
+    <dimen name="edit_text_default_text_size">24sp</dimen>
+
+    <!-- Icon default width/height -->
+    <dimen name="icon_default_min_width">32dp</dimen>
+    <dimen name="icon_default_min_height">32dp</dimen>
+
+    <dimen name="icon_default_width">42dp</dimen>
+    <dimen name="icon_default_height">42dp</dimen>
+
+    <dimen name="icon_default_midle_width">48dp</dimen>
+    <dimen name="icon_default_midle_height">48dp</dimen>
+
+    <dimen name="icon_default_great_width">58dp</dimen>
+    <dimen name="icon_default_great_height">58dp</dimen>
+
+    <dimen name="icon_default_extra_great_width">98dp</dimen>
+    <dimen name="icon_default_extra_great_height">98dp</dimen>
+
+    <!-- Strok -->
+    <dimen name="border_default_height">2dp</dimen>
+
+    <!-- Poster  width/height -->
+    <dimen name="poster_small_width">120dp</dimen>
+    <dimen name="poster_small_heigth">175dp</dimen>
+
+    <dimen name="poster_great_width">400dp</dimen>
+    <dimen name="poster_great_heigth">550dp</dimen>
+
+</resources>

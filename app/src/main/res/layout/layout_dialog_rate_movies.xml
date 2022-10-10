@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_default">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:elevation="@dimen/elevation_default"
+            app:cardCornerRadius="@dimen/radius_default"
+            app:cardElevation="@dimen/elevation_default"
+            app:cardMaxElevation="@dimen/elevation_default">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default"
+                    android:text="@string/sort_list_movies"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_default_subtitle_size"
+                    android:textStyle="bold" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/margin_default"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    android:layout_weight="1"
+                    android:fillViewport="true">
+
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_movies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/radio_button_all"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlack"
+                            android:text="@string/all"
+                            android:textColor="@color/colorBlack" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_action"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlack"
+                            android:text="@string/action"
+                            android:textColor="@color/colorBlack" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_sci_fi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlack"
+                            android:text="@string/sci_fi"
+                            android:textColor="@color/colorBlack" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_drama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlack"
+                            android:text="@string/drama"
+                            android:textColor="@color/colorBlack" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_thriller"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlack"
+                            android:text="@string/thriller"
+                            android:textColor="@color/colorBlack" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_comedy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlack"
+                            android:text="@string/comedy"
+                            android:textColor="@color/colorBlack" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_adventure"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlack"
+                            android:text="@string/adventure"
+                            android:textColor="@color/colorBlack" />
+
+
+                    </RadioGroup>
+
+                </androidx.core.widget.NestedScrollView>
+
+                <Button
+                    android:id="@+id/button_dialog_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_default"
+                    android:background="@drawable/background_red_selector"
+                    android:text="@string/classify"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</layout>

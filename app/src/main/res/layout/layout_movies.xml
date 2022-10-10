@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Layout container movies -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_container_movies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <!-- Toolbar -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlack"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="@string/marvel"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_default_great_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/toolbar_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-14dp"
+                android:text="@string/entertainment"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/text_default_size"
+                app:layout_constraintStart_toStartOf="@id/toolbar_title"
+                app:layout_constraintTop_toBottomOf="@id/toolbar_title" />
+
+
+            <ImageButton
+                android:id="@+id/toolbar_button_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_default"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/filter"
+                android:padding="@dimen/padding_min_default"
+                android:src="@drawable/ic_filter_white"
+                app:layout_constraintBottom_toBottomOf="@id/toolbar_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/toolbar_title" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Search movie -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_search_movies"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edit_text_default_height"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/margin_min_default"
+            android:backgroundTint="@color/colorWhite"
+            android:drawableEnd="@drawable/ic_search__white"
+            android:hint="@string/search"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/colorGray"
+            android:textColorHint="@color/colorGray"
+            android:textSize="@dimen/edit_text_default_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <!-- Genre filter-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/genre_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/margin_min_default"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_input_search_movies">
+
+            <TextView
+                android:id="@+id/text_view_caption_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/genre_"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/text_default_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_caption_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_min_default"
+                android:text="@string/all"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_default_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/text_view_caption_title"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- List of movies -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_movies"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_min_default"
+            android:paddingStart="@dimen/padding_min_default"
+            android:paddingEnd="@dimen/padding_min_default"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/genre_container"
+            tools:listitem="@layout/item_movie" />
+
+        <!-- Layout no results entered for the search-->
+        <include
+            android:id="@+id/layout_search_empty"
+            layout="@layout/layout_search_empty"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/genre_container" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

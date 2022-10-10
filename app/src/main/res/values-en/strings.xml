@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Marvel Entertainment</string>
+
+    <string name="all">All</string>
+    <string name="year">Year</string>
+    <string name="plot">Plot</string>
+    <string name="genre">Genre</string>
+    <string name="drama">Drama</string>
+    <string name="action">Action</string>
+    <string name="genre_">Genre:</string>
+    <string name="sci_fi">Sci-Fi</string>
+    <string name="marvel">Marvel</string>
+    <string name="actors">Actors</string>
+    <string name="comedy">Comedy</string>
+    <string name="filter">filter</string>
+    <string name="release">Release:</string>
+    <string name="duration">Duration</string>
+    <string name="director">Director</string>
+    <string name="classify">Classify</string>
+    <string name="thriller">Thriller</string>
+    <string name="adventure">Adventure</string>
+    <string name="search">Search movie…</string>
+    <string name="results_for">Results for:</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="classification">Classification</string>
+    <string name="sort_list_movies">Sort list movies</string>
+    <string name="loading_movies_list">Loading movie list…</string>
+    <string name="no_results_found_for_the_given_search">No results found for the given search.</string>
+    <string name="technical_challenge_using_marvel_api">Simple integration using a marvel api template</string>
+    <string name="no_internet_connection_offline_browsing_mode">No internet connection. Offline browsing mode</string>
+    <string name="could_not_get_the_list_of_movies">Could not get the list of movies. Please try again in a few minutes…</string>
+    <string name="there_is_currently_no_movies_available">There are currently no movies available, \ nConnect to the internet to download new movies.</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+</resources>

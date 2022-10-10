@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/drawable/background_black.xml" value="0.111" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/drawable/background_black_selector.xml" value="0.111" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/drawable/background_red.xml" value="0.1325" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/drawable/background_red_selector.xml" value="0.111" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/drawable/ic_arrow_back.xml" value="0.131" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/drawable/ic_arrow_white.xml" value="0.1325" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/drawable/ic_filter_white.xml" value="0.1325" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/drawable/ic_search__white.xml" value="0.1325" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/layout/activity_main.xml" value="0.10833333333333334" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/layout/activity_moveis.xml" value="0.1" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/layout/activity_movie_details.xml" value="0.1" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/layout/fragment_moveis.xml" value="0.18" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/layout/fragment_movie_details.xml" value="0.18" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/layout/fragment_movies.xml" value="0.16" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/layout/item_movie.xml" value="0.16972034715525555" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/layout/layout_dialog_rate_movies.xml" value="0.1" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/layout/layout_loading.xml" value="0.22" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/layout/layout_no_movies.xml" value="0.1" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/layout/layout_server_error.xml" value="0.22" />
+        <entry key="..\:/Users/Stefanini/AndroidStudioProjects/marvel-entertainment-android-master/app/src/main/res/layout/toolbar.xml" value="0.18802083333333333" />
+        <entry key="app/src/main/res/drawable/background_black.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/background_black_selector.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/ic_filter_white.xml" value="0.2035" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1515625" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25651988029072254" />
+        <entry key="app/src/main/res/layout/fragment_moveis.xml" value="0.25651988029072254" />
+        <entry key="app/src/main/res/layout/fragment_movie_details.xml" value="0.2532714225411566" />
+        <entry key="app/src/main/res/layout/fragment_movies.xml" value="0.2532714225411566" />
+        <entry key="app/src/main/res/layout/item_movie.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/layout_dialog_rate_movies.xml" value="0.25651988029072254" />
+        <entry key="app/src/main/res/layout/layout_error.xml" value="0.25651988029072254" />
+        <entry key="app/src/main/res/layout/layout_loading.xml" value="0.25651988029072254" />
+        <entry key="app/src/main/res/layout/layout_movies.xml" value="0.2532714225411566" />
+        <entry key="app/src/main/res/layout/layout_no_movies.xml" value="0.25651988029072254" />
+        <entry key="app/src/main/res/layout/layout_search_empty.xml" value="0.25651988029072254" />
+        <entry key="app/src/main/res/layout/layout_server_error.xml" value="0.25651988029072254" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.15625" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK" />
+</project>

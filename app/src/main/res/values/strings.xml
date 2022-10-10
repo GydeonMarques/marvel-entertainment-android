@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Marvel Entrenimento</string>
+
+    <string name="all">Todos</string>
+    <string name="year">Ano</string>
+    <string name="plot">Enredo</string>
+    <string name="genre">Gênero</string>
+    <string name="drama">Drama</string>
+    <string name="action">Action</string>
+    <string name="genre_">Genre:</string>
+    <string name="sci_fi">Sci-Fi</string>
+    <string name="marvel">Marvel</string>
+    <string name="actors">Atores</string>
+    <string name="comedy">Comedy</string>
+    <string name="filter">filter</string>
+    <string name="release">Release:</string>
+    <string name="duration">Duração</string>
+    <string name="director">Diretor</string>
+    <string name="thriller">Thriller</string>
+    <string name="adventure">Adventure</string>
+    <string name="classify">Classificar</string>
+    <string name="search">Pesquisar filme…</string>
+    <string name="results_for">Resultados para:</string>
+    <string name="entertainment">Entretenimento</string>
+    <string name="classification">Classificação</string>
+    <string name="sort_list_movies">Ordernar lista de filmes</string>
+    <string name="loading_movies_list">Carregando lista de filmes…</string>
+    <string name="technical_challenge_using_marvel_api">Integração simples utilizando um modelo de api da marvel</string>
+    <string name="no_results_found_for_the_given_search">Nenhum resultado encontrado para a pesquisa informada.</string>
+    <string name="no_internet_connection_offline_browsing_mode">Sem conexão com a internet. Modo de navegação off-line</string>
+    <string name="could_not_get_the_list_of_movies">Não foi possível carregar a lista de filmes. Por favor, tente novamente em alguns minutos…</string>
+    <string name="there_is_currently_no_movies_available">No momento não há filmes disponíveis.\nConecte-se à internet para baixar novos filmes</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+</resources>
