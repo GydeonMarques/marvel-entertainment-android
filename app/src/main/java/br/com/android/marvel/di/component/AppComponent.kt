@@ -18,6 +18,7 @@ import javax.inject.Singleton
         ViewModelModule::class,
         LocalDataModule::class,
         RemoteDataModule::class,
+        DispatcherModule::class,
     ]
 )
 interface AppComponent {
