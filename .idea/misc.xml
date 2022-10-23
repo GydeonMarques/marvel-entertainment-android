@@ -26,7 +26,7 @@
         <entry key="app/src/main/res/drawable/background_black.xml" value="0.2035" />
         <entry key="app/src/main/res/drawable/background_black_selector.xml" value="0.2035" />
         <entry key="app/src/main/res/drawable/ic_filter_white.xml" value="0.2035" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1515625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="1.0" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25651988029072254" />
         <entry key="app/src/main/res/layout/fragment_moveis.xml" value="0.25651988029072254" />
         <entry key="app/src/main/res/layout/fragment_movie_details.xml" value="0.2532714225411566" />

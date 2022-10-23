@@ -17,30 +17,30 @@ class MarvelRemoteRepositoryImpl @Inject constructor(
 ) : MarvelRemoteRepository {
 
     override suspend fun getAllMovies(): Result<List<MovieEntity>> {
-        val handler = CoroutineExceptionHandler { _, throwable ->
-            Result.Error(message = throwable.message)
-        }
+        return try {
+            withContext(dispatcher) {
+                with(marvelApi.getMovies()) {
 
-        return withContext(dispatcher + handler) {
-            with(marvelApi.getMovies()) {
+                    body()?.let {
+                        var index = 1
 
-                body()?.let {
-                    var index = 1
+                        val listOfMovies = it.map { movieEntity ->
+                            //Geramos um id padrão para cada filme, pois os mesmos não possui id quando são retornados da api.
+                            movieEntity.copy(id = index++).toMovieEntity()
+                        }
 
-                    val listOfMovies = it.map { movieEntity ->
-                        //Geramos um id padrão para cada filme, pois os mesmos não possui id quando são retornados da api.
-                        movieEntity.copy(id = index++).toMovieEntity()
+                        return@withContext Result.Success(listOfMovies)
                     }
 
-                    return@withContext Result.Success(listOfMovies)
-                }
+                    errorBody()?.let {
+                        return@withContext Result.Error(message = it.string())
+                    }
 
-                errorBody()?.let {
-                    return@withContext Result.Error(message = it.string())
+                    return@withContext Result.Error().default()
                 }
-
-                return@withContext Result.Error().default()
             }
+        } catch (e: Exception) {
+            return Result.Error(e.localizedMessage)
         }
     }
 }
